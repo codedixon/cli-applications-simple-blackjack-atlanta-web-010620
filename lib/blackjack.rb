@@ -37,19 +37,16 @@ def invalid_command
   puts 'Please enter a valid command'
 end
 
-def hit? get_user_input
-  total = initial_round
-  while total < 21
+def hit?(total)
   prompt_user
   get_user_input
   if get_user_input == 'h'
   total += deal_card
   elsif get_user_input == 's'
-  return display_card_total(total)
+  total = total
   else
     invalid_command
     end
-  end
   return total
 end
 
