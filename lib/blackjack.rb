@@ -46,7 +46,7 @@ def hit?(total)
   total = total
   else
     invalid_command
-    get_user_input
+    prompt_user
     end
   return total
 end
